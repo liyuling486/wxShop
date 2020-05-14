@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <view id="index">
+    <view class="indexTop">
+      <view class="indexTopTop overH">
+        <view class="indexTopAddr">
+          <image class="indexAddrIcon" src="./../../img/indexAddr.png"></image>
+          <view class="indexAddrText">白杨街道智慧谷(东门)</view>
+        </view>
+        <view class="indexTopScan">
+          <image class="indexTopScan1" src="./../../img/indexScan1.png"></image>
+          <image class="indexTopScan2" src="./../../img/indexScan2.png"></image>
+        </view>
+      </view>
+      <view class="indexTopSearch">
+        <input class="indexTopSearchIpt" placeholder="电子卡" placeholder-class="indexTopSearchIptH" />
+        <view class="indexTopSearchIcon">
+          <image src="./../../img/indexSearch.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="indexNav">
+      <view class="indexNavItem" wx:for="{{nav}}" wx:key="key">
+        <view class="indexNavItemIcon"></view>
+        <view class="indexNavItemText">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>
